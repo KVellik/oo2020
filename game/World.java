@@ -25,7 +25,7 @@ public class World {
 
         for(int y = 0; y <= height; y++){
             for(int x = 0; x <= width; x++){
-                if(y == 0 || y == height){
+                if (y == 0 || y == height){
                     symbol = "-";
                 } else if (x == 0 || x == width){
                     symbol = "|";
@@ -33,13 +33,13 @@ public class World {
                     symbol = " ";
                 }
 
-                for(Character c : characters){
-                    if(c.isVisible && c.x == x && c.y == y){
+                for (Character c : characters){
+                    if (c.isVisible && c.x == x && c.y == y){
                         symbol = c.getSymbol();
                     }
                 }
 
-                System.out.println(symbol);
+                System.out.print(symbol);
             }
 
             System.out.println("");

@@ -28,19 +28,15 @@ public class Game {
 
 
             if (input.equals("")){
-              
+                player.move();
             } else if (input.equals("u")){
-                player.changeDirection(Direction.UP);
-                
+                player.changeDirection(Direction.UP);                
             } else if (input.equals("d")){
-                player.changeDirection(Direction.DOWN);
-                
+                player.changeDirection(Direction.DOWN);               
             } else if (input.equals("l")){
-                player.changeDirection(Direction.LEFT);
-                
+                player.changeDirection(Direction.LEFT);               
             } else if (input.equals("r")){
-                player.changeDirection(Direction.RIGHT);
-                
+                player.changeDirection(Direction.RIGHT);               
             }
 
             if(player.x == npc.x && player.y == npc.y){
